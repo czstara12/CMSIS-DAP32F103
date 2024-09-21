@@ -31,6 +31,12 @@
 /* Keil.MDK-Plus::USB:Device:Custom Class:6.15.0 */
 #define RTE_USB_Device_CustomClass_0    /* USB Device Custom Class instance 0 */
 
+/* Keil::CMSIS Driver:USART:2.3 */
+#define RTE_Drivers_USART1              /* Driver USART1 */
+        #define RTE_Drivers_USART2              /* Driver USART2 */
+        #define RTE_Drivers_USART3              /* Driver USART3 */
+        #define RTE_Drivers_USART4              /* Driver UART4  */
+        #define RTE_Drivers_USART5              /* Driver UART5  */
 /* Keil::CMSIS Driver:USB Device:2.2 */
 #define RTE_Drivers_USBD0               /* Driver USBD0 */
 
