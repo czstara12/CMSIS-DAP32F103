@@ -3,3 +3,4 @@ F103-LINK.uvguix.*
 JLinkLog.txt
 .vscode/*
 *.dbgconf
+F103-LINK/MDK-ARM/F103-LINK.uvoptx

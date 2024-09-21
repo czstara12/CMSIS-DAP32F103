@@ -55,22 +55,22 @@ UART_HandleTypeDef huart1;
 const uint8_t APBPrescTable[8U] =  {0, 0, 0, 0, 1, 2, 3, 4};
 
 // Statically change USB Device 0 Device Descriptor
-const uint8_t usbd0_device_descriptor[] = { 
-  18U,         // bLength = 7 bytes
-  1U,          // bDescriptorType = 1 = Device Descriptor Type
-  0x00U,0x02U,       // bcdUSB = 2.00 (little-endian)
-  0X00U,          // bDeviceClass = 0 = Defined in interface
-  0U,          // bDeviceSubClass = 0 = Defined in interface
-  0U,          // bDeviceProtocol = 0 = Defined in interface
-  8U,         // bMaxPacketSize = 8
-  0x09U,0x12U, // idVendor = 0x0D28 (little-endian)
-  0x01U,0x00U, // idProduct = 0x0204 (little-endian)
-  0U,1U,       // bcdDevice = 1.00 (little-endian)
-  1U,          // iManufacturer = 0 = No Manufacturer string
-  2U,          // iProduct = 0 = No Product string
-  3U,          // iSerialNumber = 0 = No Serial Number string
-  1U           // bNumConfigurations = 1 = 1 configuration
-};
+//const uint8_t usbd0_device_descriptor[] = { 
+//  18U,         // bLength = 7 bytes
+//  1U,          // bDescriptorType = 1 = Device Descriptor Type
+//  0x00U,0x02U,       // bcdUSB = 2.00 (little-endian)
+//  0X00U,          // bDeviceClass = 0 = Defined in interface
+//  0U,          // bDeviceSubClass = 0 = Defined in interface
+//  0U,          // bDeviceProtocol = 0 = Defined in interface
+//  8U,         // bMaxPacketSize = 8
+//  0x51U,0xC2U, // idVendor = 0x0D28 (little-endian) 0xC251
+//  0x0AU,0xF0U, // idProduct = 0x0204 (little-endian) 0xF00A
+//  0U,1U,       // bcdDevice = 1.00 (little-endian)
+//  1U,          // iManufacturer = 0 = No Manufacturer string
+//  2U,          // iProduct = 0 = No Product string
+//  3U,          // iSerialNumber = 0 = No Serial Number string
+//  1U           // bNumConfigurations = 1 = 1 configuration
+//};
 
 /* USER CODE END PV */
 

@@ -11,6 +11,8 @@
 HAL框架和RTE框架在F103上有很大的冲突 比如两个框架各有一套CMSIS-Device驱动 但是头文件名和内容有很大差别 并且硬编码在各自的驱动库中 而中间件又依赖一些驱动库 
 另外两个框架也各自有各自的启动文件
 
+不太可能塞到32kROM 10kRAM的C6T6上了
+
 ## 备注
 
 针对USBD_STM32F10x.c添加了
@@ -58,8 +60,14 @@ __STATIC_FORCEINLINE void     PIN_SWDIO_OUT     (uint32_t bit) {
 }
 ```
 
-
+必须同时启动USB CDC dap才能正常工作 PID/VID也需要精心挑选(使用示例中的)
 
 ## TODO
 
 SPI驱动SW电平逻辑
+
+顺势加入虚拟串口
+
+SWO
+
+JTAG

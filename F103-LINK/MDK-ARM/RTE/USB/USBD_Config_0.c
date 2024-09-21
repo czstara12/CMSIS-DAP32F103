@@ -38,7 +38,7 @@
 
 //     <o.0..15>Product ID <0x0000-0xFFFF>
 //     <i>Product ID assigned by manufacturer (idProduct).
-#define USBD0_DEV_DESC_IDPRODUCT        0x0000
+#define USBD0_DEV_DESC_IDPRODUCT        0xF00B
 
 //     <o.0..15>Device Release Number <0x0000-0xFFFF>
 //     <i>Device Release Number in binary-coded decimal (bcdDevice)
@@ -71,7 +71,7 @@
 
 //     <s.126>Manufacturer String
 //     <i>String Descriptor describing Manufacturer.
-#define USBD0_STR_DESC_MAN              L"StarStory"
+#define USBD0_STR_DESC_MAN              L"StarStory CMSIS-DAP"
 
 //     <s.126>Product String
 //     <i>String Descriptor describing Product.

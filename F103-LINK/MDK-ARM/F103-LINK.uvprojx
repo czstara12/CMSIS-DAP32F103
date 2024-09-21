@@ -728,6 +728,12 @@
           <targetInfo name="F103-LINK"/>
         </targetInfos>
       </component>
+      <component Cbundle="MDK-Plus" Cclass="USB" Cgroup="Device" Csub="CDC" Cvendor="Keil" Cversion="6.15.0" condition="USB Core and Device Instance and Device Driver" maxInstances="8">
+        <package name="MDK-Middleware" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="Keil" version="7.13.0"/>
+        <targetInfos>
+          <targetInfo name="F103-LINK"/>
+        </targetInfos>
+      </component>
       <component Cbundle="MDK-Plus" Cclass="USB" Cgroup="Device" Csub="Custom Class" Cvendor="Keil" Cversion="6.15.0" condition="USB Core and Device Instance and Device Driver" maxInstances="4">
         <package name="MDK-Middleware" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="Keil" version="7.13.0"/>
         <targetInfos>
@@ -819,6 +825,14 @@
       <file attr="config" category="source" name="USB\Config\USBD_Config.c" version="5.2.0">
         <instance index="0">RTE\USB\USBD_Config_0.c</instance>
         <component Cbundle="MDK-Plus" Cclass="USB" Cgroup="Device" Cvendor="Keil" Cversion="6.15.0" condition="USB Core and Device Instance and Device Driver" maxInstances="4"/>
+        <package name="MDK-Middleware" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="Keil" version="7.13.0"/>
+        <targetInfos>
+          <targetInfo name="F103-LINK"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" name="USB\Config\USBD_Config_CDC.h" version="5.2.0">
+        <instance index="0">RTE\USB\USBD_Config_CDC_0.h</instance>
+        <component Cbundle="MDK-Plus" Cclass="USB" Cgroup="Device" Csub="CDC" Cvendor="Keil" Cversion="6.15.0" condition="USB Core and Device Instance and Device Driver" maxInstances="8"/>
         <package name="MDK-Middleware" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="Keil" version="7.13.0"/>
         <targetInfos>
           <targetInfo name="F103-LINK"/>
