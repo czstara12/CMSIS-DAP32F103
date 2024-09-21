@@ -1,0 +1,5 @@
+build/
+F103-LINK.uvguix.*
+JLinkLog.txt
+.vscode/*
+*.dbgconf
